@@ -1,11 +1,11 @@
 # Site settings
-author: Lyndel Evan Barnes
-title: 
+author: L. Evan Barnes
+title: Linden Online
 header-img: img/home-bg.png
 email: l.evan.barnes@gmail.com
-copyright_name: Lyndel Evan Barnes
+copyright_name: L. Evan Barnes
 description: > # this means to ignore newlines until "baseurl:"
-  
+  My Adventures in Web Development
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  lindenmeadow
