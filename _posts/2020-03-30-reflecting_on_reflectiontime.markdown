@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Reflecting on ReflectionTime"
-date:       2020-03-30 21:26:59 +0000
+date:       2020-03-30 17:27:00 -0400
 permalink:  reflecting_on_reflectiontime
 ---
 
