@@ -1,0 +1,18 @@
+---
+layout: post
+title:      "Challenging Book Challenge"
+date:       2020-08-11 17:20:00 +0000
+permalink:  challenging_book_challenge
+---
+
+My fourth portfolio project, just like the two before it, is geared toward the education field. While discussing ideas for this project with my wife, I learned about author [Donalyn Miller's 40 Book Challenge](https://www.readwriteteachela.com/post/the-40-book-challenge-in-my-classroom) -- and a lightbulb went on. I decided to create an SPA with features inspired by Ms. Miller's reading plan for students.
+
+The Book Challenge is intended as an application which would allow users -- mainly elementary school and/or middle school students -- to create a log of books they have read. In keeping with the project's CRUD design requirements, the interface allows users to create, view, edit, and delete genres and book log entries. Once a genre has been added, books can be added to it.
+
+Building the API was far and away the simplest part of the project build. Though we were told not to use scaffold for our third portfolio project, this time using scaffold was not only allowed but, according to one tutorial video I watched, was actually encouraged. So I mainly just had to hammer out the controllers, models, and ActiveRecord tables, leaving scaffold to generate most of the rest for me. The Rails API has two models: Genre and Book. A genre has many books, and a book belongs to a genre.  The Rails models in turn have corresponding JavaScript Genre and Book classes. 
+
+To keep all features on a single page, I designed the app so the page's main section can switch back and forth between the genre list and a list of books contained in a particular genre, while the book log entries and data input forms appear on the screen as modal boxes. Initially, I tried using Bootstrap for the modal boxes but kept running into some snags, so I ended up creating them largely from scratch (with some help from [w3schools.com](https://www.w3schools.com/)). A small fixed nav menu on the left side of the content section has a link that will bring up the genre list and another link for bringing up a modal form for adding a genre. Submitting that form causes a new genre element to be added to the content section. Users can view a list of book log entries in that genre by clicking the genre's name, and they can add a book to a genre by clicking the "Add a Book" button. There are also buttons for editing the genre name and deleting a genre altogether. (A warning box comes up to confirm whether the user wants to delete the genre, as deleting it will simultaneously delete book log entries under that genre.) Each item in the book log entry list, which follows the same styling as the genre list, has a link with the book's title, and clicking on that link will bring up a modal box with the log entry for that book, with information such as the book's title, author, number of pages, etc. There are buttons below the book title for bringing up a book log entry edit form and for deleting a book log entry. As when deleting a genre, a warning box appears to confirm the user's decision to delete an entry.
+
+While the app's features wound up being pretty simple, working out the mechanics of it all still proved challenging for me. In fact, I spent more time learning what **didn't** work than what **did** work. And though there was a lot of trial and error, I again saw the truth of the observation that coders often spend more time researching solutions online than they do actually coding. Now I just hope my work will receive a pass from my Flatiron reviewer... 
+
+
